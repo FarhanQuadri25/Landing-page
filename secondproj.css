@@ -1,0 +1,207 @@
+/* Resets */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --maincolor: #239b7e;
+    --color: white;
+    --newcolor: black;
+    --fontname: bebas neue;
+    --primname: sans-serif;
+}
+
+/* Nav start */
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+    font-family: var(--fontname);
+    font-weight: bold;
+}
+
+.logo {
+    margin-left: 5rem;
+    font-size: 2rem;
+}
+
+.burger {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    margin-right: 5rem;
+
+}
+
+.burger span {
+    border: 2px solid var(--maincolor);
+    width: 40px;
+    height: 1px;
+    margin: 2px;
+
+}
+
+
+/* Header start */
+header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    height: 100vh;
+    margin-top: 2rem;
+}
+
+.main-headings {
+    font-size: 4rem;
+    font-family: var(--primname);
+    transform: translatY(-40px);
+    color: black;
+    line-height: 5rem;
+
+}
+
+.main-headings span {
+    color: black;
+}
+
+.primary-headings {
+    max-width: 500px;
+    font-family: var(--primname);
+    line-height: 25px;
+    margin-bottom: 1rem;
+    color: var(--maincolor);
+}
+
+.btn-fill {
+    background-color: var(--maincolor);
+    color: black;
+    padding: 12px 20px;
+    margin-right: 10px;
+    cursor: pointer;
+    border: none;
+    font-size: 1.2rem;
+    transition: all 0.3s ease-out;
+
+}
+
+.btn-fill:hover {
+    background-color: #6cc644;
+    border: 1px solid #6cc644;
+}
+
+.btn-outline.active {
+    background-color: var(--maincolor);
+    color: black;
+    padding: 12px 20px;
+    margin-right: 10px;
+    cursor: pointer;
+    border: none;
+    font-size: 1.2rem;
+    transition: all 0.3s ease-out;
+
+}
+
+.btn-outline.active:hover {
+    background-color: #6cc644;
+    border: 1px solid #6cc644;
+}
+
+.img-container {
+    border-radius: 50%;
+    box-shadow: 4px 7px 5px 2px #bcbaba;
+}
+
+.header-img {
+    border-radius: 100%;
+    background: url(images/oswaldo-ibanez-1NPUmTaiMeg-unsplash.jpg);
+    background-position: top;
+    background-size: cover;
+    width: 400px;
+    height: 400px;
+}
+
+.section-one {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 7rem;
+}
+
+.section-one-img {
+    background-image: url(images/gesphotoss-1i9K55ni5Dk-unsplash.jpg);
+    background-position: top;
+    background-size: cover;
+}
+
+/* section end */
+.products {
+    margin-top: 10rem;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.products .products-heading {
+    font-family: var(--primary-font);
+    font-size: 2rem;
+    margin-bottom: 3rem;
+}
+
+.products .product-categories button {
+    margin-right: 20px;
+    margin-bottom: 2rem;
+}
+
+.products .product-items-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    max-width: 60rem;
+}
+
+.products .product-items-container .item {
+    margin: 20px;
+}
+
+.products .product-items-container .item-layer {
+    background: #ebf1f0;
+    padding: 40px;
+    margin-right: 20px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+
+.products .product-items-container .item-layer img {
+    width: 150px;
+    height: 200px;
+}
+
+.products .product-items-container .item .item-name {
+    font-family: var(--primary-font);
+    margin-bottom: 10px;
+}
+
+.products .product-items-container .item .item-price {
+    font-family: var(--primary-font);
+    margin-bottom: 10px;
+}
+
+.products .product-items-container .item .view-product {
+    font-family: var(--primary-font);
+    margin-bottom: 10px;
+    text-decoration: none;
+    color: var(--main-color);
+    border-bottom: 1px solid var(--main-color);
+}
